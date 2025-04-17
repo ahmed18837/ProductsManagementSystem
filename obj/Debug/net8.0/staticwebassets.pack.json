@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\-Vip-23\\source\\repos\\ProductsManagementSystem\\ProductsManagementSystem\\wwwroot\\Images\\Products\\d2e06403-d65e-487c-a2c1-8680a1262a19.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\d2e06403-d65e-487c-a2c1-8680a1262a19.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProductsManagementSystem.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProductsManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ProductsManagementSystem.props",
+      "PackagePath": "build\\ProductsManagementSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ProductsManagementSystem.props",
+      "PackagePath": "buildMultiTargeting\\ProductsManagementSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ProductsManagementSystem.props",
+      "PackagePath": "buildTransitive\\ProductsManagementSystem.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

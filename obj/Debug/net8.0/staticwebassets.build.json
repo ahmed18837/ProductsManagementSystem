@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "QYumGFu/Qq9Ohbb8pVCRrwTTleqZgTlBJOSUtj6oXik=",
+  "Source": "ProductsManagementSystem",
+  "BasePath": "_content/ProductsManagementSystem",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ProductsManagementSystem\\wwwroot",
+      "Source": "ProductsManagementSystem",
+      "ContentRoot": "C:\\Users\\-Vip-23\\source\\repos\\ProductsManagementSystem\\ProductsManagementSystem\\wwwroot\\",
+      "BasePath": "_content/ProductsManagementSystem",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\-Vip-23\\source\\repos\\ProductsManagementSystem\\ProductsManagementSystem\\wwwroot\\Images\\Products\\d2e06403-d65e-487c-a2c1-8680a1262a19.jpg",
+      "SourceId": "ProductsManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\-Vip-23\\source\\repos\\ProductsManagementSystem\\ProductsManagementSystem\\wwwroot\\",
+      "BasePath": "_content/ProductsManagementSystem",
+      "RelativePath": "Images/Products/d2e06403-d65e-487c-a2c1-8680a1262a19#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "05vp476tqt",
+      "Integrity": "5AnZ9Rk7FCZThiJ0cmiKqp0utLnR4ndNt0TACcMChTc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\d2e06403-d65e-487c-a2c1-8680a1262a19.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Images/Products/d2e06403-d65e-487c-a2c1-8680a1262a19.05vp476tqt.jpg",
+      "AssetFile": "C:\\Users\\-Vip-23\\source\\repos\\ProductsManagementSystem\\ProductsManagementSystem\\wwwroot\\Images\\Products\\d2e06403-d65e-487c-a2c1-8680a1262a19.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4743"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5AnZ9Rk7FCZThiJ0cmiKqp0utLnR4ndNt0TACcMChTc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 17:25:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "05vp476tqt"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/d2e06403-d65e-487c-a2c1-8680a1262a19.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5AnZ9Rk7FCZThiJ0cmiKqp0utLnR4ndNt0TACcMChTc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/d2e06403-d65e-487c-a2c1-8680a1262a19.jpg",
+      "AssetFile": "C:\\Users\\-Vip-23\\source\\repos\\ProductsManagementSystem\\ProductsManagementSystem\\wwwroot\\Images\\Products\\d2e06403-d65e-487c-a2c1-8680a1262a19.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4743"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5AnZ9Rk7FCZThiJ0cmiKqp0utLnR4ndNt0TACcMChTc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 17:25:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5AnZ9Rk7FCZThiJ0cmiKqp0utLnR4ndNt0TACcMChTc="
+        }
+      ]
+    }
+  ]
+}
