@@ -51,6 +51,11 @@ namespace ProductsManagementSystem.Mapping
             CreateMap<CreateSupplierDto, Supplier>().ReverseMap();
             CreateMap<UpdateSupplierDto, Supplier>().ReverseMap();
 
+            CreateMap<RequestRegisterDto, ApplicationUser>()
+    .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.Email))
+    .ForMember(dest => dest.NationalId, opt => opt.MapFrom(src => src.NationalId)); // مهم جداً
+
+
             CreateMap<IdentityUser, UserDto>().ReverseMap();
             CreateMap<UpdateUserDto, ApplicationUser>().ReverseMap();
             CreateMap<IdentityRole, RoleDto>().ReverseMap();

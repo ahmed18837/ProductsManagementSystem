@@ -212,13 +212,13 @@ app.UseSwaggerUI(options =>
 app.UseResponseCaching();
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseCors("AllowAll");
 app.UseAuthentication(); // íÌÈ Ãä íßæä ÞÈá UseAuthorization
 app.UseAuthorization();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
 });
-app.UseCors("AllowAll");
 app.UseStaticFiles();
 
 

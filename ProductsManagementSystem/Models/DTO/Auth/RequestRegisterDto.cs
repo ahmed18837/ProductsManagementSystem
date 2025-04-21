@@ -10,11 +10,11 @@ namespace ProductsManagementSystem.Models.DTO.Auth
         [DefaultValue("FullName")]
         public string FullName { get; set; }
 
-        //[Required(ErrorMessage = "National ID is required.")]
-        //[StringLength(14, MinimumLength = 14, ErrorMessage = "National ID must be exactly 14 characters.")]
-        //[RegularExpression("^[0-9]{14}$", ErrorMessage = "National ID must contain only numbers.")]
-        //[DefaultValue("12345678901234")]
-        //public string NationalId { get; set; }
+        [Required(ErrorMessage = "National ID is required.")]
+        [StringLength(14, MinimumLength = 14, ErrorMessage = "National ID must be exactly 14 characters.")]
+        [RegularExpression("^[0-9]{14}$", ErrorMessage = "National ID must contain only numbers.")]
+        [DefaultValue("12345678901234")]
+        public string NationalId { get; set; }
 
         [Required(ErrorMessage = "Email is required.")]
         [EmailAddress(ErrorMessage = "Invalid email format.")]
