@@ -211,20 +211,29 @@ namespace ProductsManagementSystem.Services.Implements
 
         public async Task<string> ForgetPasswordAsync(string email)
         {
-            var user = await _manager.FindByEmailAsync(email) ??
-                throw new Exception("User not found");
+            var user = await _manager.FindByEmailAsync(email)
+                ?? throw new Exception("User not found");
 
-            var resetCode = GenerateCode();
+            // إنشاء باسورد عشوائية
+            var newPassword = GenerateRandomPassword(); // انت هتعمل الميثود دي
 
-            user.ResetCode = resetCode;
-            await _manager.UpdateAsync(user);
+            // إعادة تعيين الباسورد
+            var token = await _manager.GeneratePasswordResetTokenAsync(user);
+            var result = await _manager.ResetPasswordAsync(user, token, newPassword);
 
-            var subject = "Password Reset Code";
-            var message = $"Your password reset code is: {resetCode}";
+            if (!result.Succeeded)
+            {
+                throw new Exception("Password reset failed: " + string.Join(", ", result.Errors.Select(e => e.Description)));
+            }
+
+            // إرسال الباسورد الجديدة بالإيميل
+            var subject = "Password Reset";
+            var message = $"Your new password is: {newPassword}";
             await _emailService.SendEmailAsync(user.Email, subject, message);
 
-            return $"A password reset code has been sent to your email.";
+            return "A new password has been sent to your email.";
         }
+
 
         public async Task<string> ResetPasswordAsync(ResetPasswordDto model)
         {
@@ -689,5 +698,13 @@ namespace ProductsManagementSystem.Services.Implements
             Random random = new Random();
             return random.Next(10000000, 99999999).ToString();
         }
+        private string GenerateRandomPassword(int length = 10)
+        {
+            const string validChars = "ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@$?_-";
+            var random = new Random();
+            return new string(Enumerable.Repeat(validChars, length)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+
     }
 }

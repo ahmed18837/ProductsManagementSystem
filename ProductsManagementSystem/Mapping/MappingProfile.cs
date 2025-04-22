@@ -53,7 +53,7 @@ namespace ProductsManagementSystem.Mapping
 
             CreateMap<RequestRegisterDto, ApplicationUser>()
     .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.Email))
-    .ForMember(dest => dest.NationalId, opt => opt.MapFrom(src => src.NationalId)); // مهم جداً
+    /*.ForMember(dest => dest.NationalId, opt => opt.MapFrom(src => src.NationalId))*/; // مهم جداً
 
 
             CreateMap<IdentityUser, UserDto>().ReverseMap();

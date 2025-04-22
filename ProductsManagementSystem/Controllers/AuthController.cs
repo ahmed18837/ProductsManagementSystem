@@ -197,7 +197,7 @@ namespace ProductsManagementSystem.Controllers
             }
         }
 
-        [Authorize(Roles = "Super Admin, Admin")]
+        //[Authorize(Roles = "Super Admin, Admin")]
         [HttpGet("AllUsers")]
         [ResponseCache(Duration = 60, Location = ResponseCacheLocation.Client, NoStore = false)]
         public async Task<IActionResult> GetUsers()

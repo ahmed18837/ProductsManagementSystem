@@ -9,9 +9,9 @@ namespace ProductsManagementSystem.Data
         [MaxLength(50)]
         public string FullName { get; set; }
 
-        [MaxLength(50)]
-        [RegularExpression(@"^\d{14}$", ErrorMessage = "National ID must be exactly 14 digits.")]
-        public string NationalId { get; set; }
+        //[MaxLength(50)]
+        //[RegularExpression(@"^\d{14}$", ErrorMessage = "National ID must be exactly 14 digits.")]
+        //public string NationalId { get; set; }
 
         [MaxLength(8)]
         public string? ResetCode { get; set; }
